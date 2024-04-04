@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main
+{
+  public static void main (String[]args)
+  {
+	double media = 0;
+	double soma = 0;
+	double nota = 0;
+	int i = 0;
+	while (i < 10)
+	  {
+		Scanner kb = new Scanner (System.in);
+		  System.out.println ("Digite valor da " + (i + 1) + "B* nota: ");
+		  nota = kb.nextDouble ();
+		  i++;
+		  soma += nota;
+	  }
+	media = soma / i;
+
+	System.out.println ("Sua mC)dia C): " + media);
+
+	if (media >= 7)
+	  {
+		System.out.println ("aprovado");
+	  }
+	else if (media >= 5)
+	  {
+		System.out.println ("recuperaC'C#o");
+	  }
+	else
+	  {
+		System.out.println ("reprovado");
+	  }
+  }
+}
